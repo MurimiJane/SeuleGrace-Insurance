@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(250, 249, 242);
+}
+
+.title {
+    width:80%;
+    height: 10vh;
+    padding-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-left:5vh;
+}
+
+.lists {
+    width: 60vh;
+    padding-right: 0vh;
+}
+
+.lists ul {
+        width: 60vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lists ul li {
+
+    list-style-type: none;
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mainBody {
+    width: 40vh;
+    padding-left: 1vh;
+     margin-top: 13vh;
+     padding-right: 8vh;
+}
+
+.mainImg{
+   width:40%;
+}
+
+.theMainImg {
+    
+    border-radius: 5%;
+    margin-bottom: 0vh;
+    margin-right: 20vh;
+}
+
+.quoteBtn {
+    margin-top: 3vh;
+    height: 4vh;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6%;
+    padding: 3vh;
+    text-decoration: bold;
+   
+
+}
+
+.section2 {
+    width: 100%;
+    height: 70vh;
+}
+
+.section2 h1 {
+    font-size: 15px;
+    text-decoration: underline;
+    text-align: center;
+    color: orangered;
+    padding-top: 6vh;
+}
+
+.insuranceCovers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8vh;
+}
+
+.insuranceCovers img {
+    height: 7vh;
+    padding-bottom: 1.5vh;
+}
+
+.covers1 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.covers2 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10vh;
+
+}
+
+.coversMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+}
+
+.section3 h1 {
+    font-size: 15px;
+    text-decoration: underline;
+    text-align: center;
+    color: orangered;
+    text-decoration-color: black;
+}
+
+.processSummary {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8vh;
+}
+
+.section4 {
+    width: 100%;
+    height: 55vh;
+    background-image: url("../Images/pexels-photo-955393.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+   
+}
+
+.section4 h1{
+        font-size: 15px;
+     color: orangered;
+    text-decoration: underline;
+    text-decoration-color: black;
+    padding-top: 3vh;
+}
+
+.tint {
+    background-color: linear-gradient(rgba(0, 0, 0, 0.4));
+    z-index: index -10;
+}
+
+.testimonialBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 4vh;
+}
+
+.testimonialBox img{
+    width:15vh;
+    height:15vh;
+    border-radius: 50%;
+}
+
+.box1 {
+    width: 40vh;
+    height: 35vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2vh;
+        padding-top: 4vh;
+
+
+}
+
+
+.box2 {
+    width: 40vh;
+    height: 35vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2vh;
+    padding-top: 4vh;
+
+}
+
+.section5 {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+
+}
+
+.section5 h1{
+        font-size: 15px;
+           color: orangered;
+    text-decoration: underline;
+    text-decoration-color: black;
+   padding-top: 3vh;
+}
+
+.contactInfo{
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 4vh;
+}
+
+.support{
+    display: flex;
+    flex-direction: row;
+    width:30%;
+    justify-content: space-between;
+    align-items:right;
+}
+
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
