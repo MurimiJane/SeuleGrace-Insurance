@@ -3,44 +3,77 @@
     padding: 0;
 }
 
+body{
+    font-family:'Bentham', serif;
+}
+
 .section1 {
     width: 100%;
     height: 100vh;
     background-color: rgb(250, 249, 242);
+    background-image: url("../Images/multigenerational-family-smiling-using-tablet-16x9-2000x1125.webp");
+    z-index: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Dark overlay */
+    z-index: 1;
 }
 
 .title {
-    width:80%;
+    width: 100%;
     height: 10vh;
-    padding-top: 1vh;
+    padding-top: 3vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+     color: white;
 }
 
-.logo{
-    padding-left:5vh;
+
+.logo {
+    padding-left: 15vh;
+    z-index: 2;
+    color: rgba(255, 237, 175, 1);
 }
 
 .lists {
     width: 60vh;
-    padding-right: 0vh;
+    margin-right: 15vh;
+    z-index: 2;
 }
 
 .lists ul {
-        width: 60vh;
-
+    width: 60vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .lists ul li {
 
     list-style-type: none;
-      display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
+
+}
+
+.lists ul li:hover {
+    text-decoration: underline orangered 3px;
+    cursor: pointer;
 
 }
 
@@ -48,38 +81,55 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    padding-top: 12vh;
 
 }
 
 .mainBody {
-    width: 40vh;
-    padding-left: 1vh;
-     margin-top: 13vh;
-     padding-right: 8vh;
+    width: 60vh;
+    margin-left: 15vh;
+    margin-right: 10vh;
+    margin-top: 6vh;
+    padding-right: 0vh;
+    z-index: 2;
+    color: white
 }
 
-.mainImg{
-   width:40%;
+.mainBody h1{
+    color: rgba(255, 237, 175, 1);
+}
+
+.mainBody p{
+   font-size: 18px;
+}
+
+.mainImg {
+    width: 20%;
+    z-index: 2;
 }
 
 .theMainImg {
-    
-    border-radius: 5%;
+width:800px; 
+    border-radius: 5vh;
     margin-bottom: 0vh;
     margin-right: 20vh;
+    margin-left: 0vh;
+    padding-left: 0vh;
 }
 
 .quoteBtn {
-    margin-top: 3vh;
-    height: 4vh;
-    background-color: red;
+    margin-top: 2vh;
+    height: 6vh;
+    background-color:orangered;
     color: white;
     border: none;
-    border-radius: 6%;
+    border-radius: 2vh;
     padding: 3vh;
     text-decoration: bold;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -90,9 +140,8 @@
 
 .section2 h1 {
     font-size: 15px;
-    text-decoration: underline;
+    text-decoration: underline orangered;
     text-align: center;
-    color: orangered;
     padding-top: 6vh;
 }
 
@@ -137,7 +186,8 @@
 
 .section3 {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
+    background-color: rgba(250, 249, 242, 1);
 }
 
 .section3 h1 {
@@ -146,6 +196,19 @@
     text-align: center;
     color: orangered;
     text-decoration-color: black;
+    padding-top: 5vh;
+}
+
+.processIcons{
+    height:10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top:4vh;
+}
+
+.processIcons img{
+    height:5vh;
 }
 
 .processSummary {
@@ -155,29 +218,45 @@
     align-items: center;
     flex-direction: column;
     padding-top: 8vh;
+
+
 }
+
+.processSummary img{
+height: 6vh;
+}
+
+.summaryPointerImg {}
 
 .section4 {
     width: 100%;
     height: 55vh;
-    background-image: url("../Images/pexels-photo-955393.webp");
+    background-image: url("../Images/pexels-rdne-7821684\ 1.png");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-   
+
 }
 
-.section4 h1{
-        font-size: 15px;
-     color: orangered;
+.section4 h1 {
+    font-size: 15px;
+    color: orangered;
     text-decoration: underline;
     text-decoration-color: black;
     padding-top: 3vh;
+      z-index: 10;
 }
 
-.tint {
-    background-color: linear-gradient(rgba(0, 0, 0, 0.4));
-    z-index: index -10;
+.section4Tint {
+    width: 100%;
+    height: 55vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    /* Dark overlay */
+    z-index: 1;
+    position: absolute;
+    top: 290vh;
+    left: 0;
+    
 }
 
 .testimonialBox {
@@ -187,12 +266,18 @@
     align-items: center;
     width: 100%;
     padding-top: 4vh;
+    z-index: 2;
 }
 
-.testimonialBox img{
-    width:15vh;
-    height:15vh;
+.testimonialBox img {
+    width: 15vh;
+    height: 15vh;
     border-radius: 50%;
+    z-index: 2;
+}
+
+.testimonialBox p{
+   font-style: italic;
 }
 
 .box1 {
@@ -202,9 +287,9 @@
     color: white;
     text-align: center;
     padding: 2vh;
-        padding-top: 4vh;
-
-
+    padding-top: 4vh;
+      z-index: 2;
+    border-radius: 3px;
 }
 
 
@@ -216,6 +301,8 @@
     text-align: center;
     padding: 2vh;
     padding-top: 4vh;
+  z-index: 2;
+      border-radius: 3px;
 
 }
 
@@ -226,37 +313,59 @@
 
 }
 
-.section5 h1{
-        font-size: 15px;
-           color: orangered;
+.section5 h1 {
+    font-size: 15px;
+    color: orangered;
     text-decoration: underline;
     text-decoration-color: black;
-   padding-top: 3vh;
+    padding-top: 3vh;
 }
 
-.contactInfo{
-    width:80%;
+.seuleGrace img{
+    height:3vh;
+}
+
+.contactInfo {
+    width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     padding-top: 4vh;
 }
 
-.support{
+.seuleGrace{
+    font-size: 2.5vh;
+    padding-left: 40vh;
+}
+
+.support {
     display: flex;
     flex-direction: row;
-    width:30%;
+    width: 30%;
     justify-content: space-between;
-    align-items:right;
+    align-items: right;
+}
+
+.support a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 2.5vh;
+  margin: 6px 0;
+  transition: color 0.3s ease;
 }
 
 
 .footer {
     width: 100%;
-    height: 10vh;
+    height: 6vh;
     text-align: center;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.solid{
+    border-top:1px solid black;
 }
