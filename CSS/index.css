@@ -77,6 +77,15 @@ body{
 
 }
 
+.lists a{
+    color: white;
+    text-decoration: none;
+}
+
+.homeList{
+    color: orangered;
+}
+
 .body {
     width: 100%;
     display: flex;
@@ -135,12 +144,12 @@ width:800px;
 
 .section2 {
     width: 100%;
-    height: 70vh;
+    height: 90vh;
 }
 
 .section2 h1 {
     font-size: 15px;
-    text-decoration: underline orangered;
+    color: orangered;
     text-align: center;
     padding-top: 6vh;
 }
@@ -184,6 +193,110 @@ width:800px;
     flex-direction: column;
 }
 
+.coversMain {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  width: 200px;
+}
+
+.coversMain:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.coversMain img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+.coversMain p {
+  font-weight: 600;
+  color: #333;
+}
+.coversMain small {
+  display: block;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+
+.section3 {
+  width: 100%;
+    background: linear-gradient(to top, #faf9f2, #fdfdfd);
+  /*background: #faf9f2;*/
+  padding: 6vh 0;
+}
+
+.section3 h1 {
+  font-size: 15px;
+  text-align: center;
+  color: orangered;
+  margin-bottom: 4rem;
+}
+
+/* Timeline container */
+.processTimeline {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Each step row */
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step.left .text {
+  text-align: right;
+  width: 45%;
+}
+
+.step.right .text {
+  text-align: left;
+  width: 45%;
+}
+
+.step .icon {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.step .icon img {
+  height: 6vh;  /* keep same size as before */
+}
+
+/* Text styling */
+.step h4 {
+  color: orangered;   /* red heading */
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* Connectors */
+.connector {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+  width: 90vh;       /* keep consistent */
+}
+
+/* icons row at top */
+
+/*
 .section3 {
     width: 100%;
     height: 120vh;
@@ -226,8 +339,9 @@ width:800px;
 height: 6vh;
 }
 
-.summaryPointerImg {}
+.summaryPointerImg {}*/
 
+/*--
 .section4 {
     width: 100%;
     height: 55vh;
@@ -252,6 +366,7 @@ height: 6vh;
     height: 55vh;
     background-color: rgba(0, 0, 0, 0.75);
     /* Dark overlay */
+    /*
     z-index: 1;
     position: absolute;
     top: 290vh;
@@ -304,56 +419,184 @@ height: 6vh;
   z-index: 2;
       border-radius: 3px;
 
+} */
+
+
+/* ================= SECTION 4: TESTIMONIALS ================= */
+.section4 {
+  width: 100%;
+  min-height: 60vh;
+  background-image: url("../Images/pexels-rdne-7821684 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  padding: 4vh 0;
+  text-align: center;
 }
 
-.section5 {
-    width: 100%;
-    height: 50vh;
-    text-align: center;
+.section4Tint {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
 
+.section4 h1 {
+  position: relative;
+  font-size: 15px;               /* reverted to original small size */
+  color: orangered;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+  z-index: 2;
+}
+
+.testimonialBox {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;                     /* increased spacing between boxes */
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonialBox img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.box1, .box2 {
+  background: rgba(255,255,255,0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box1:hover, .box2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+}
+
+
+
+
+
+
+
+
+.section5 {
+  width: 100%;
+  background: #fff;
+  padding: 4vh 0;
+  position: relative;
 }
 
 .section5 h1 {
-    font-size: 15px;
-    color: orangered;
-    text-decoration: underline;
-    text-decoration-color: black;
-    padding-top: 3vh;
+  font-size: 2vh;
+  font-weight: 700;
+  color: orangered;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.seuleGrace img{
-    height:3vh;
-}
-
+/* Main row container */
 .contactInfo {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding-top: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap; /* makes it responsive */
+  text-align: left;
 }
 
-.seuleGrace{
-    font-size: 2.5vh;
-    padding-left: 40vh;
+/* SeuleGrace section */
+.seuleGrace {
+  flex: 1;
+  min-width: 220px;
+}
+.seuleGrace p img {
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
+/* Support / Legal */
 .support {
-    display: flex;
-    flex-direction: row;
-    width: 30%;
-    justify-content: space-between;
-    align-items: right;
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }
-
+.support h3 {
+  margin-bottom: 1rem;
+}
 .support a {
   display: block;
-  color: black;
+  color: #333;
+  margin-bottom: 0.5rem;
   text-decoration: none;
-  font-size: 2.5vh;
-  margin: 6px 0;
   transition: color 0.3s ease;
+}
+.support a:hover {
+  color: orangered;
+  font-weight: 600;
+}
+
+/* Contact Form */
+.contactForm {
+  flex: 1.2;
+  min-width: 300px;
+}
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.contactForm button {
+  background: orangered;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contactForm button:hover {
+  background: darkorange;
+}
+
+/*-----------------Arrow----------------*/
+.upArrow {
+    height: 2vh;
+    z-index: 2;
+}
+
+.upArrowCont {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5vh;
+    right: 5%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.upArrowCont :hover {
+    cursor: pointer;
 }
 
 
@@ -368,4 +611,8 @@ height: 6vh;
 
 .solid{
     border-top:1px solid black;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
 }

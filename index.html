@@ -4,18 +4,19 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
-    crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-     crossorigin="anonymous"></script>
-         <link href="https://fonts.googleapis.com/css2?family=Bentham:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Bentham:wght@300;400;600;700&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="CSS/index.css">
    <title>SEULEGRACE</title>
 </head>
 
 <body>
-   <section class="section1">
+   <section class="section1" id="home">
       <div class="tint"></div>
       <div class="title">
          <div class="logo">
@@ -24,11 +25,12 @@
 
          <div class="lists">
             <ul>
-               <li>HOME</li>
-               <li>ABOUT</li>
-               <li>FEEDBACK</li>
-               <li>FAQs</li>
-               <li>CONTACT</li>
+                              <a href="#home"><li class="homeList">HOME</li></a>
+                              <a href="#covers"><li>COVERS</li></a>
+                              <a href="#process"><li>PROCESS</li></a>
+                              <a href="#feedback"><li>FEEDBACK</li></a>
+                              <a href="#contact"><li>CONTACT</li></a>
+
             </ul>
          </div>
       </div>
@@ -51,7 +53,7 @@
       </div>
    </section>
 
-   <section class="section2">
+   <section class="section2" id="covers">
 
       <h1>INSURANCE COVERS</h1>
 
@@ -96,71 +98,71 @@
       </div>
    </section>
 
-   <section class="section3">
-      <h1>OUR PROCESS</h1>
+  <section class="section3" id="process">
+  <h1>OUR PROCESS</h1>
 
-      <div class="processIcons">
-       <div class="icon1">
-       <img src="Images/Chooose.png" alt="">
-       <p>Choose Insurance</p>
-       </div>
-     
-        <div class="icon2">
-       <img src="Images/Reach Out.png" alt="">
-       <p>Reach Out</p>
-       </div>
+  <div class="processTimeline">
 
-        <div class="icon3">
-       <img src="Images/FAQs.png" alt="">
-       <p>Frequently Asked Questions</p>
-       </div>
-
-        <div class="icon4">
-       <img src="Images/Follow Up.png" alt="">
-       <p>Follow Up</p>
-       </div>
+    <!-- Step 1 -->
+    <div class="step left">
+      <div class="text">
+        <h4>1. Choose Insurance</h4>
+        <p>Navigate our site to the insurance covers  <br>section to select your insurance of choice.</p>
       </div>
-
-      <div class="processSummary">
-         <div class="chooseInsurance">
-            <h4>1.Choose Insurance</h4>
-            <p>Navigate our site to the insurance covers site to select your insurance of choice.<img src="Images/Chooose.png" alt="" class="summaryPointerImg"></p>
-             <br>
-            <img src="Images/Vector 1 (3).png" alt="">
-         </div>
-
-         <div class="reachOut">
-           
-            <h4><img src="Images/Reach Out.png" alt=""> <br> 2.Reach Out</h4>
-            <p> Reach out to us through the contact information provided. </p>
-            <img src="Images/Vector 2 (1).png" alt="">
-         </div>
-
-         <div class="FAQs">
-            <img src="" alt="">
-            <h4>3.FAQs</h4>
-            <p>Visit "Support" at the bottom of the page, in the contact section to read FAQs and download a brochure
-               about the insurance you’re interested in. <img src="Images/FAQs.png" alt=""></p>
-            <img src="Images/Vector 2 (2).png" alt="">
-         </div>
-
-         <div class="followUp">
-            <img src="" alt="">
-            <h4>4.Follow Up</h4>
-            <p>Get a scheduled appointment with us to discuss further. <img src="Images/Follow Up.png" alt=""></p>
-         </div>
-
+      <div class="icon">
+        <img src="Images/Chooose.png" alt="">
       </div>
-   </section>
+    </div>
+    <img src="Images/Vector 1 (3).png" alt="" class="connector">
 
-   <section class="section4">
+    <!-- Step 2 -->
+    <div class="step right">
+      <div class="icon">
+        <img src="Images/Reach Out.png" alt="">
+      </div>
+      <div class="text">
+        <h4>2. Reach Out</h4>
+        <p>Reach out to us through the contact information <br> provided.</p>
+      </div>
+    </div>
+    <img src="Images/Vector 2 (1).png" alt="" class="connector">
+
+    <!-- Step 3 -->
+    <div class="step left">
+      <div class="text">
+        <h4>3. FAQs</h4>
+        <p>Visit Support at the bottom of the page to read <br> FAQs and download brochures.</p>
+      </div>
+      <div class="icon">
+        <img src="Images/FAQs.png" alt="">
+      </div>
+    </div>
+    <img src="Images/Vector 2 (2).png" alt="" class="connector">
+
+    <!-- Step 4 -->
+    <div class="step right">
+      <div class="icon">
+        <img src="Images/Follow Up.png" alt="">
+      </div>
+      <div class="text">
+        <h4>4. Follow Up</h4>
+        <p>Get a scheduled appointment with us to discuss further.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+   <section class="section4" id="feedback">
       <div class="section4Tint"></div>
       <h1>CLIENT TESTIMONIALS</h1>
       <div class="testimonialBox">
          <div class="box1">
             <img src="Images/pexels-photo-1222271.jpeg" alt="">
             <p>John Doe</p> <br>
-            <p class="testimonial">"I’ve been met with great and streamlined  service"</p>
+            <p class="testimonial">"I’ve been met with great and streamlined service"</p>
          </div>
 
          <div class="box2">
@@ -171,31 +173,48 @@
       </div>
    </section>
 
-   <section class="section5">
+<section class="section5" id="contact">
   <h1>CONTACT</h1>
 
+   <div class="upArrowCont" id="upArrow">
+        <img src="images/upArrow.png" alt="" class="upArrow" id="upArrow" />
+      </div>
+
+
   <div class="contactInfo">
+    <!-- SEULEGRACE INFO -->
     <div class="seuleGrace">
       <h3>SEULEGRACE</h3>
-      <p><img src="Images/phone.png" alt="Phone Icon"> +254 115 758 942</p>
-      <p><img src="Images/email.png" alt="Email Icon"> seulegrace@gmail.com</p>
+      <p><img src="Images/phone.png" alt=""> +254 115 758 942</p>
+      <p><img src="Images/email.png" alt=""> seulegrace@gmail.com</p>
     </div>
 
+    <!-- SUPPORT / LEGAL -->
     <div class="support">
-      <div class="support1">
+      <div>
         <h3>SUPPORT</h3>
         <a href="#">FAQs</a>
         <a href="#">Support</a>
       </div>
-
-      <div class="support2">
+      <div>
         <h3>LEGAL</h3>
         <a href="#">Terms of Service</a>
         <a href="#">Privacy Policy</a>
       </div>
     </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contactForm">
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </div>
 </section>
+
 
 
    <hr class="solid">
@@ -204,4 +223,5 @@
    </footer>
 </body>
 
+<script src="JS/index.js"></script>
 </html>
